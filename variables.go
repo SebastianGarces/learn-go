@@ -53,5 +53,4 @@ func main() {
 	var numTwo int16 = -129
 	var numThree uint8 = 255 //unsigned numeric type (positive numbers)
 	fmt.Println(numOne, numTwo, numThree)
-
 }
