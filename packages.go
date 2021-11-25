@@ -6,6 +6,8 @@ import (
 	"strings"
 )
 
+// packages docs https://pkg.go.dev/std
+
 func main() {
 	greeting := "hello there friends!"
 	fmt.Println(strings.Contains(greeting, "hello"))
