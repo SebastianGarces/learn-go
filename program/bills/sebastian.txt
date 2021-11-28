@@ -1,0 +1,9 @@
+BILL BREAKDOWN: 
+
+pie:                      ...$6 
+coffee:                   ...$3 
+sandwich:                 ...$5 
+
+tip:                      ...$10.00 
+
+total:                    ...$24.00
