@@ -8,19 +8,16 @@ import (
 	"strings"
 )
 
+func main() {
+	myBill := createBill()
+	promptOptions(myBill)
+}
+
 func getUserInput(prompt string, r *bufio.Reader) (string, error) {
 	fmt.Print(prompt)
 	response, error := r.ReadString('\n')
 	response = strings.TrimSpace(response)
 	return response, error
-}
-
-func createBill() bill {
-	reader := bufio.NewReader(os.Stdin)
-	billName, _ := getUserInput("Create a new bill name: ", reader)
-	newBill := newBill(billName)
-	fmt.Println("Created bill: ", newBill.name)
-	return newBill
 }
 
 func promptOptions(b bill) string {
@@ -61,9 +58,4 @@ func promptOptions(b bill) string {
 	}
 
 	return option
-}
-
-func main() {
-	myBill := createBill()
-	promptOptions(myBill)
 }

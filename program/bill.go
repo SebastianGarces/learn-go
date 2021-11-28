@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
 )
@@ -18,6 +19,14 @@ func newBill(name string) bill {
 		tip:   0,
 	}
 
+	return newBill
+}
+
+func createBill() bill {
+	reader := bufio.NewReader(os.Stdin)
+	billName, _ := getUserInput("Create a new bill name: ", reader)
+	newBill := newBill(billName)
+	fmt.Println("Created bill: ", newBill.name)
 	return newBill
 }
 
